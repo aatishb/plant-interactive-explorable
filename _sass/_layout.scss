@@ -1,8 +1,13 @@
 html, body, main, section, .container-fluid, .background-cover, .vine-container, %fullsize {
   height: 100%;
-  width: 100%;
+  width: 1200px;
   padding: 0;
   margin: 0;
+  z-index: 0;
+}
+
+.vine-container{
+  z-index: -2;
 }
 
 section {
@@ -21,10 +26,11 @@ section {
   @extend %fullsize;
 
   background-repeat: no-repeat;
+  /*
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
+  */
   pointer-events: none;
 
   opacity: 0;
@@ -35,6 +41,9 @@ section {
     transition: opacity 0.5s;
   }
   &.background {
+    z-index: -3;
+  }
+  &.middleground {
     z-index: -1;
   }
   &.foreground {

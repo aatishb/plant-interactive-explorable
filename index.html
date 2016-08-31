@@ -3,18 +3,38 @@ layout: default
 ---
 
 <div class="layer layer--overlay background js-layer js-layer--1 active" style="background-image: url(images/1-bg.png)"></div>
+<div class="layer layer--overlay middleground js-layer js-layer--1 active" style="background-image: url(images/1-mg.png)"></div>
 <div class="layer layer--overlay foreground js-layer js-layer--1 active" style="background-image: url(images/1-fg.png)"></div>
 
 <div class="layer layer--overlay background js-layer js-layer--2" style="background-image: url(images/2-bg.png)"></div>
+<div class="layer layer--overlay middleground js-layer js-layer--2" style="background-image: url(images/2-mg.png)"></div>
 <div class="layer layer--overlay foreground js-layer js-layer--2" style="background-image: url(images/2-fg.png)"></div>
 
-<div class="layer layer--overlay background js-layer js-layer--4" style="background-image: url(images/4-bg.png)"></div>
+<div class="layer layer--overlay background js-layer js-layer--3" style="background-image: url(images/3-bg.jpg)"></div>
+<!--
+<div class="layer layer--overlay middleground js-layer js-layer--3" style="background-image: url(images/3-mg.png)"></div>
+<div class="layer layer--overlay foreground js-layer js-layer--3" style="background-image: url(images/3-fg.png)"></div>
+-->
+
+<div class="layer layer--overlay background js-layer js-layer--4" style="background-image: url(images/4-bg-vines.png)"></div>
+<div class="layer layer--overlay middleground js-layer js-layer--4" style="background-image: url(images/4-mg.png)"></div>
+<!--
 <div class="layer layer--overlay foreground js-layer js-layer--4" style="background-image: url(images/4-fg.png)"></div>
+-->
+
+<div class="layer layer--overlay background js-layer js-layer--5" style="background-image: url(images/5-bg.png)"></div>
+<div class="layer layer--overlay middleground js-layer js-layer--5" style="background-image: url(images/5-mg.png)"></div>
+<div class="layer layer--overlay foreground js-layer js-layer--5" style="background-image: url(images/5-fg.png)"></div>
+
+<div class="layer layer--overlay background js-layer js-layer--6" style="background-image: url(images/6-bg.png)"></div>
+<div class="layer layer--overlay middleground js-layer js-layer--6" style="background-image: url(images/6-mg.png)"></div>
+<div class="layer layer--overlay foreground js-layer js-layer--6" style="background-image: url(images/6-fg.png)"></div>
 
 <div class="layer layer--overlay vine-container"></div>
 
 <div class="layer layer--content">
   <div class="container-fluid">
+
     <section>
       <div class="row">
         <div class="col-sm-7">
@@ -25,13 +45,20 @@ layout: default
             <p>
               <span class="dropcap">I</span>magine you’re in a rainforest in Costa Rica, and you come across a great big trunk of a tree. You look down at the ground, and among the brown mix of roots and leaves you can clearly make out hundreds of little green lines, like arrow markers that surround the tree and point towards its base.
             </p>
-            <div class="js-vine-trigger"></div>
-            <p></p>
             <p>
               This is the situation in which biologists Donald Strong and Thomas Ray found themselves in the 1970s. They describe seeing “thousands of bright green seedlings [..] in contrast against the brown leaf litter, creeping inward from all sides of the tree. The seedlings appear as short spokes of a wheel with the tree as the hub.”
             </p>
             <p>
-              The seedlings they saw were the young shoots of vines. But instead of meandering about and aimlessly exploring the forest floor around them, these young vines seem to ‘hone in’ on the trunk of the tree, a little like iron filings attracted to a magnet. Being the sort of folks who can’t walk away from a good question, these biologists wondered, how do these vines possibly ‘know’ which way to go? What was the force behind this mysterious ‘tree magnetism’?
+              The seedlings they saw were the young shoots of vines. But instead of meandering about and aimlessly exploring the forest floor around them, these young vines seem to ‘hone in’ on the trunk of the tree, a little like iron filings attracted to a magnet.
+            </p>
+            <p>
+              Being the sort of folks who can’t walk away from a good question, these biologists wondered, how do these vines possibly ‘know’ which way to go? What was the force behind this mysterious ‘tree magnetism’?
+            </p>
+            <p>
+              After conducting a bunch of experiments, they found that this vine, which they called Monstera gigantea (now known as Monstera tenuis) behaves in a way that, at first, seems totally paradoxical for a plant. It’s attracted to darkness.
+            </p>
+            <p>
+              You read that right. A creature that relies on sunshine for its very existence spends its early life hunting for darkness.
             </p>
             <div class="js-scene-trigger" data-index="2"></div>
           </div>
@@ -41,14 +68,11 @@ layout: default
 
     <section>
       <div class="row">
-        <div class="col-sm-7">
-        </div>
+        <div class="col-sm-7"></div>
         <div class="col-sm-4">
           <div class="layer--content__text">
             <p></p>
-            <p>
-              After conducting a bunch of experiments, they found that this vine, which they called Monstera gigantea (now known as Monstera tenuis) behaves in a way that, at first, seems totally paradoxical for a plant. It’s attracted to darkness. You read that right. A creature that relies on sunshine for its very existence spends its early life hunting for darkness.
-            </p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -62,19 +86,210 @@ layout: default
         <div class="col-sm-4">
           <div class="layer--content__text">
             <p></p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="2" data-time="0.05"></div>
+              <p></p>
+              <p></p>
+            </animate>
             <p>
               It starts as a teeny seedling, barely visible, poking up from the forest floor. Not much to look at. Not yet. But just knowing its name – Monstera gigantea – you know it’s about to get bigger.
             </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="2" data-time="0.2"></div>
+              <p></p>
+              <p></p>
+            </animate>
             <p>
-              The seed starts to grow, peeps through the soil, and begins to elongate. It’s a slender, baby vine. Popping up on the forest floor, peeking out, stretching, growing. And so it starts to snake its way through the forest floor, bending left a little… right a little… left a little… right a little.
+              The seed starts to grow, peeps through the soil, and begins to elongate. It’s a slender, baby vine. Popping up on the forest floor, peeking out, stretching, growing.
             </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="2" data-time="0.4"></div>
+              <p></p>
+              <p></p>
+            </animate>
             <p>
-              The thing about vines that makes them different from bushes and trees and sturdier plants, is they have no vertical architecture, nothing that holds them upright. Vines can’t shoot straight up toward the light like trees. Instead, they’re floppy. They would be the plant equivalent of snakes, stuck crawling on the ground. They move sideways, looking for something to grab onto, something to help them up.
+              And so it starts to snake its way through the forest floor, bending left a little… right a little… left a little… right a little.
             </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="2" data-time="0.6"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <p>
+              The thing about vines that makes them different from bushes and trees and sturdier plants, is they have no vertical architecture, nothing that holds them upright. Vines can’t shoot straight up toward the light like trees. Instead, they’re floppy.
+            </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="2" data-time="1"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <p>
+              They would be the plant equivalent of snakes, stuck crawling on the ground. They move sideways, looking for something to grab onto, something to help them up. How do they find a ladder to the sky?
+            </p>
+            <div class="js-vine-kill"></div>
+            <div class="js-scene-trigger" data-index="3"></div>
           </div>
         </div>
       </div>
     </section>
+
+
+
+    <section>
+      <div class="row">
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-4">
+          <div class="layer--content__text"">
+            <p></p>
+            <p>
+              Well, they don’t have eyes… but being plants, they can tell light from dark, and somehow – we don’t know exactly how –  they’re able to “see” – if that’s the right word –  patches of light or dark  around them. So this little vine senses a patch of darkness in any direction. AHA! A shadow! A shadow means something is blocking the sun. The bigger the shadow, the bigger that something is.
+            </p>
+            <p>
+              It’s picky about its shadows. If the shadow is very skinny, the vine doesn’t care.
+            </p>
+            <p>
+              But if the shadow blocks several degrees of the horizon – the more degrees the better – that suggests what’s in front of it may be big and tall, maybe a tree that can take it up to the light. It doesn’t only care about the size of the shadow. Monstera is a darkness specialist. Even in the low-light of the forest floor, it can tell the difference between different shades of shade. The darker the shade, the stronger Monstera’s attraction towards it. And so it looks for shadows that are both big and dark, the tell-tale sign of the largest trees around.
+            </p>
+            <div class="js-scene-trigger" data-index="4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="row">
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-4">
+          <div class="layer--content__text"">
+            <p></p>
+
+            <animate>
+              <div class="js-vine-trigger" data-scene="4" data-time="0.2"></div>
+              <p></p>
+              <p></p>
+            </animate>
+
+            <p>
+              As Monstera inches its way towards the darkness, it’s a race against time. Because it has precious few tiny leaves, Monstera doesn’t have the energy to spend on sprinting towards its tree. Instead, it’s a slow and steady crawl.
+            </p>
+
+            <animate>
+              <div class="js-vine-trigger" data-scene="4" data-time="0.4"></div>
+              <p></p>
+              <p></p>
+            </animate>
+
+            <p>
+              It winds its way around roots and rocks, under fallen leaves, inching towards the tree, moving just four inches (ten centimeters) a month across the forest floor. Of the thousands of vines crawling along, most don’t make this arduous journey, instead they get buried in leaves and dirt before they reach their target.
+             </p>
+
+            <animate>
+              <div class="js-vine-trigger" data-scene="4" data-time="0.6"></div>
+              <p></p>
+              <p></p>
+            </animate>
+
+            <p>
+              But some fortunate few make it. And once they make contact with the tree trunk, their ladder to the light, the vine starts to transform itself. Vines can sense touch: in fact, their tendrils have been considered more sensitive than human touch, able to detect weights much less than a penny. And so, assumedly, it’s the sensation of touch that tells Monstera it’s arrived.
+            </p>
+
+            <animate>
+              <div class="js-vine-trigger" data-scene="4" data-time="0.8"></div>
+              <p></p>
+              <p></p>
+            </animate>
+
+            <p>
+              It’s no longer a darkness seeker. Now this vine’s job is to climb.
+            </p>
+
+            <animate>
+              <div class="js-vine-trigger" data-scene="4" data-time="1"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <div class="js-vine-kill"></div>
+            <div class="js-scene-trigger" data-index="5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="row">
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-4">
+          <div class="layer--content__text"">
+            <p></p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="5" data-time="0.25"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <p>
+              To power its vertical ascent, it sprouts leaves, with a shape somewhere between a circle and a heart, that press flat against the tree like wallpaper. Meanwhile, its sticky roots cling on to the bark like superglue. With patches of diffuse sunshine to fuel its growth, the vine keeps climbing.
+            </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="5" data-time="0.5"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <p>
+              At first its leaves as small, about a centimeter across (under half an inch). But as it climbs higher, it can afford to become more ambitious. Its leaves grow bigger and becomes a darker shade of green, eventually growing to almost a foot across. All the while, Monstera keeps climbing.
+            </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="5" data-time="0.75"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <p>
+              Now, suddenly, comes another change. For the first time in its life, this vine breaks through the shade of the forest canopy, and is basking in direct sunlight. It has managed to do what every vine aspires to do, and has succeeded in this daring journey towards the light.
+            </p>
+            <animate>
+              <div class="js-vine-trigger" data-scene="5" data-time="1"></div>
+              <p></p>
+              <p></p>
+            </animate>
+            <div class="js-vine-kill"></div>
+            <div class="js-scene-trigger" data-index="6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="row">
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-4">
+          <div class="layer--content__text"">
+            <p></p>
+            <p>
+              Once it breaks out of the shade, it goes through the final transformation in its unusual life cycle. It was born a darkness seeker, then as it reached its ladder to the sky, it became an adept climber, and now, having climbed into the light, it switches gears and becomes a light-seeker.
+            </p>
+            <p>
+              To take advantage of all this sunlight, it sprouts huge leaves (we’re talking leaves over four feet long) that split into long dark-green fingers, and oddly, have holes in them, like a pair of ‘distressed’ denim jeans. (These holes earn some species of Monstera the nickname ‘swiss-cheese plant’)
+            </p>
+            <p>
+              Vines don’t flower until they succeed in their task of climbing, thereby ensuring that only the most successful vines pass on their genes. The ones that die in the forest floor die childless. And so, high up on its perch, Monstera now produces its beautiful white flowers, that once fertilized, become a strange, protruding foot-long fruit, looking somewhat like a yellowish-green corn on the cob. Birds gorge on this fleshy fruit, and the seeds that they release will eventually birth more darkness seekers.
+            </p>
+            <p>
+              And so the cycle continues. Darkness, Light, Darkness, Light, Darkness, Light.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </div>
 </div>
 
